@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OAuth2 + JWT Microservices Demo
 
 A small full-stack project whose only goal is to **show how OAuth2 and JWT secure microservices**.
@@ -262,3 +263,7 @@ To see expiry quickly, change `ACCESS_TTL_SECONDS` in `auth-service/server.js` t
 - `auth-service` is a small hand-written authorization server, not a complete OAuth2 implementation. Production: Keycloak, Auth0, Cognito or Okta.
 - The password grant is used for simplicity. Browser apps in production should use **Authorization Code + PKCE**.
 - Everything is in memory and runs over HTTP. In production use HTTPS (`NODE_ENV=production` makes the cookie `Secure`), a real database, a managed private key, and key rotation.
+=======
+# OAuth_and_jwt_tokens
+Learn how to secure microservices with OAuth2 and JWT. A small bookstore built with Node.js/Express (auth-service, API gateway, book and order services) and a React client. Shows RS256 token signing, JWKS verification, role-based access, token propagation and refresh rotation. No database, no Docker: just Node 18+ and npm run dev.
+>>>>>>> 93af73f3129d717f9f09fbbff06252e11895d662
