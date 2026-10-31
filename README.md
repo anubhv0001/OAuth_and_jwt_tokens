@@ -258,7 +258,7 @@ To see expiry quickly, change `ACCESS_TTL_SECONDS` in `auth-service/server.js` t
 5. Restart auth-service: why do all existing tokens stop working? (new key pair, so a new `kid`)
 6. Why validate the token in the gateway **and** in the services?
 
-## 7. Limitations (it is a teaching demo)
+## 7. Limitations 
 
 - `auth-service` is a small hand-written authorization server, not a complete OAuth2 implementation. Production: Keycloak, Auth0, Cognito or Okta.
 - The password grant is used for simplicity. Browser apps in production should use **Authorization Code + PKCE**.
