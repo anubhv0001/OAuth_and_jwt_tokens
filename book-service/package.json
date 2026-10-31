@@ -1,0 +1,12 @@
+{
+  "name": "book-service",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "jose": "^5.9.6",
+    "oauth2-jwt-microservices-demo": "file:.."
+  }
+}

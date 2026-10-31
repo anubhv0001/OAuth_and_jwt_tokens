@@ -1,0 +1,9 @@
+{
+  "name": "oauth2-jwt-microservices-demo",
+  "private": true,
+  "scripts": {
+    "install:all": "npm i --prefix auth-service && npm i --prefix book-service && npm i --prefix order-service && npm i --prefix gateway && npm i --prefix client",
+    "dev": "concurrently -n auth,book,order,gateway,web -c blue,green,yellow,magenta,cyan \"npm start --prefix auth-service\" \"npm start --prefix book-service\" \"npm start --prefix order-service\" \"npm start --prefix gateway\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": { "concurrently": "^9.0.1" }
+}
